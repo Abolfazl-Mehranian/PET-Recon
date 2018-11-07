@@ -7,7 +7,7 @@ from geometry.BuildGeometry import BuildGeometry
 mmr = BuildGeometry('mmr')
 
 save_dir='J:\MyPyWorkSapce\mmr2008\\'
-isPrecomputed = True
+isPrecomputed = False
 if not isPrecomputed:
     mmr.buildSystemMatrixUsingSymmetries(save_dir)
 
@@ -36,7 +36,7 @@ plt.subplot(1,2,2),plt.imshow(imgx3d[:,:,50]),plt.title('Reconstructed',fontsize
 mct = BuildGeometry('mct')
 
 save_dir='J:\MyPyWorkSapce\mct1104\\'
-isPrecomputed = True
+isPrecomputed = False
 if not isPrecomputed:
     mct.buildSystemMatrixUsingSymmetries(save_dir)
 
